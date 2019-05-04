@@ -1,6 +1,6 @@
 {
   "name": "@marsraptor/raptor-r",
-  "version": "0.0.1",
+  "version": "0.0.2-dev.1",
   "description": "Create R resource file similar to android R class",
   "main": "./lib/index.js",
   "scripts": {

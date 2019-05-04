@@ -132,7 +132,7 @@ export function build(root: string | ResourceFolder, handler: (err: any, data?: 
                     });
                 } else {
                     fileInfo = fileInformer(file, false);
-                    let childNode = new ResourceFile(fileInfo.name, file, fileInfo.ext!, fullPath)
+                    let childNode = new ResourceFile(fileInfo.name, file, fileInfo.ext!, path.relative("./",fullPath))
                     rootNode.addFile(childNode)
                     if (!--pending) handler(null, rootNode);
                 }
